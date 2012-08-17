@@ -30,7 +30,7 @@
     </licenses>
     
     <properties>
-  	  <version.instant-messaging.plugin>1.22-h-1-SNAPSHOT</version.instant-messaging.plugin>
+  	  <version.instant-messaging.plugin>1.22-h-1</version.instant-messaging.plugin>
   	</properties>
     
     <dependencies>
