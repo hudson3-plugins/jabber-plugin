@@ -11,7 +11,7 @@
     <artifactId>jabber</artifactId>
     <packaging>hpi</packaging>
     <name>Hudson Jabber notifier plugin</name>
-    <version>1.23-h-1</version>
+    <version>1.23-h-2-SNAPSHOT</version>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Jabber+Plugin</url>
     <developers>
         <developer>
