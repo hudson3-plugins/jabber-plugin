@@ -85,7 +85,7 @@ class JabberIMConnection extends AbstractIMConnection {
 	 */
 	private final String nick;
 	/**
-	 * The nick name of the Hudson bot to use in group chats.
+	 * The nick name of the Jenkins bot to use in group chats.
 	 * May be null in which case the nick is used.
 	 */
 	@Nullable
@@ -308,7 +308,7 @@ class JabberIMConnection extends AbstractIMConnection {
 		}
 
 		if (this.connection.isConnected()) {
-			this.connection.login(this.desc.getUserName(), this.passwd, "Hudson");
+			this.connection.login(this.desc.getUserName(), this.passwd, "Jenkins");
 			
 			setupSubscriptionMode();
 			createVCardIfNeeded();
@@ -361,7 +361,7 @@ class JabberIMConnection extends AbstractIMConnection {
 		this.roster.setSubscriptionMode(mode);
 	}
 
-	/** Sets the Hudson vCard avatar for this account, if not done so already. */
+	/** Sets the Jenkins vCard avatar for this account, if not done so already. */
 	private void createVCardIfNeeded() {
 	    try {
     	    if (!vCardExists()) {
@@ -396,13 +396,13 @@ class JabberIMConnection extends AbstractIMConnection {
 	}
 
 	/**
-	 * Constructs a vCard for Mr Hudson.
+	 * Constructs a vCard for Mr Jenkins.
 	 */
 	private void createVCard() throws XMPPException {
 
 		VCard vCard = new VCard();
 		vCard.setFirstName("Mr.");
-		vCard.setLastName("Hudson");
+		vCard.setLastName("Jenkins");
 		vCard.setNickName(this.nick);
 		setAvatarImage(vCard);
 		vCard.save(this.connection);

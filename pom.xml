@@ -1,28 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.jvnet.hudson.plugins</groupId>
+        <groupId>org.hudsonci.plugins</groupId>
         <artifactId>instant-messaging-parent</artifactId>
         <version>3.0.0-M4</version>
         <relativePath>../instant-messaging-parent-plugin/pom.xml</relativePath>
     </parent>
     
+    <groupId>org.hudsonci.plugins</groupId>
     <artifactId>jabber</artifactId>
     <packaging>hpi</packaging>
     <name>Hudson Jabber notifier plugin</name>
-    <version>1.23-SNAPSHOT</version>
+    <version>1.23-h-1-SNAPSHOT</version>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Jabber+Plugin</url>
     <developers>
         <developer>
             <id>kutzi</id>
             <name>Christoph Kutzinski</name>
             <email>kutzi@gmx.de</email>
-            <timezone>1</timezone>
-        </developer>
-        <developer>
-            <id>christ66</id>
-            <name>Steven Christou</name>
-            <email>schristou88@gmail.com</email>
             <timezone>1</timezone>
         </developer>
     </developers>
@@ -35,24 +30,24 @@
     </licenses>
     
     <properties>
-  	  <version.instant-messaging.plugin>1.22-SNAPSHOT</version.instant-messaging.plugin>
+  	  <version.instant-messaging.plugin>1.22-h-1-SNAPSHOT</version.instant-messaging.plugin>
   	</properties>
     
     <dependencies>
         <dependency>
-        	<groupId>org.jvnet.hudson.plugins</groupId>
+        	<groupId>org.hudsonci.plugins</groupId>
         	<artifactId>instant-messaging</artifactId>
         	<version>${version.instant-messaging.plugin}</version>
 	    	<scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>jivesoftware</groupId>
+            <groupId>org.igniterealtime.smack</groupId>
             <artifactId>smack</artifactId>
             <version>3.2.1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>jivesoftware</groupId>
+            <groupId>org.igniterealtime.smack</groupId>
             <artifactId>smackx</artifactId>
             <version>3.2.1</version>
             <scope>compile</scope>
