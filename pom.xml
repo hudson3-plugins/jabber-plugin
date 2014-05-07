@@ -3,15 +3,14 @@
     <parent>
         <groupId>org.hudsonci.plugins</groupId>
         <artifactId>instant-messaging-parent</artifactId>
-        <version>3.2.0-SNAPSHOT</version>
-        <relativePath>../instant-messaging-parent-plugin/pom.xml</relativePath>
+        <version>3.2.0</version>
     </parent>
     
     <groupId>org.hudsonci.plugins</groupId>
     <artifactId>jabber</artifactId>
     <packaging>hpi</packaging>
     <name>Hudson Jabber notifier plugin</name>
-    <version>1.23-h-2-SNAPSHOT</version>
+    <version>1.23-h-2</version>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Jabber+Plugin</url>
     <developers>
         <developer>
@@ -30,7 +29,7 @@
     </licenses>
     
     <properties>
-  	  <version.instant-messaging.plugin>1.22-h-2-SNAPSHOT</version.instant-messaging.plugin>
+  	  <version.instant-messaging.plugin>1.22-h-2</version.instant-messaging.plugin>
   	</properties>
     
     <dependencies>
